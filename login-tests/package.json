@@ -1,0 +1,11 @@
+{
+  "name": "login-tests",
+  "private": true,
+  "scripts": {
+    "test": "..\\node_modules\\.bin\\playwright.cmd test",
+    "report": "..\\node_modules\\.bin\\playwright.cmd show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}

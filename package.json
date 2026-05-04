@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "test": "playwright test",
+    "Vegatest": "npx playwright test ",
+    "LoginPageTest": "npx playwright test login-tests/Test/LoginPageTest.spec.js",
+    "DashboArdTest": "npx playwright test login-tests/Test/DashboArdtest.spec.js",
+    "cucumber": "cucumber-js",
+    "cucumber:headed": "set HEADLESS=false&& cucumber-js",
+    "cucumber:smoke": "cucumber-js --tags @SmokeTest",
+    "cucumber:validation": "cucumber-js --tags @Validation",
+    "cucumber:vega": "cucumber-js allure-report/features/Vega.feature --require allure-report/features/Support/hooks.js --require allure-report/features/step_definations/steps.js --format progress --format html:cucumber-report.html",
+    "report": "playwright show-report",
+    "allure:generate": "npx allure generate .\\allure-results -o .\\allure-report",
+    "allure:open": "npx allure open .\\allure-report"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.8.2",
+    "exceljs": "^3.4.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "allure-playwright": "^3.7.1",
+    "typescript": "^6.0.3"
+  }
+}
