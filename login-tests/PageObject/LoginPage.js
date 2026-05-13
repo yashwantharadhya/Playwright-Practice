@@ -10,6 +10,7 @@ class LoginPage {
     await this.page.goto('https://vegadev.gnrgy.com/Account/Login');
   }
 
+  //vlaid login method
   async login(username, password) {
     await this.username.fill(username);
     await this.passwordInput.fill(password);
