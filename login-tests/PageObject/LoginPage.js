@@ -17,6 +17,13 @@ class LoginPage {
     await this.loginButton.click();
     await this.page.waitForLoadState('networkidle');
   }
+
+
+  // this is empty  login method for invalid login test case
+  async emptyLogin() {
+    await this.loginButton.click();
+    await this.page.waitForLoadState('networkidle');
+  }
 }
 
 module.exports = { LoginPage };
